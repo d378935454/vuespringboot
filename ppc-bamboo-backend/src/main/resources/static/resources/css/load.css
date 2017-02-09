@@ -1,0 +1,23 @@
+.datagrid-mask{  
+       position:absolute;  
+       left:0;  
+       top:0;  
+       background:#ccc;  
+       opacity:0.3;  
+       filter:alpha(opacity=30);  
+       display:none;  
+}  
+.datagrid-mask-msg{  
+     position:absolute;  
+     cursor1:wait;  
+     left:100px;  
+     top:50px;  
+     width:auto;  
+     font-size:12px;  
+     height:16px;  
+     padding:20px 10px 30px 50px;  
+     background:#fff url('../img/loaders/4.gif') no-repeat scroll 5px 10px;  
+     border:2px solid #6593CF;  
+     color:#222;  
+     display:none;  
+}      

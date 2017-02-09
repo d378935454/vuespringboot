@@ -1,0 +1,88 @@
+<style>
+    .table th, .table td {
+        text-align: center;
+        vertical-align: middle !important;
+    }
+</style>
+
+<h2 class="center page-header">节点列表</h2>
+<div id="vue">
+    <div class="col-sm-7 col-md-7 col-lg-7 col-xs-12">
+        <div class="row margin-top">
+            <form class="form-inline" role="form">
+                <div class="col-sm-8 col-md-10 col-lg-10 col-xs-12">
+                    <div class="form-group" style="width: 100%">
+                        <input type="text" style="width: 100%" class="form-control" id=""
+                               placeholder="请输入接口名或流程名，支持模糊查询">
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-2 col-lg-2 col-xs-6">
+                    <div class="form-group" style="width: 100%">
+                        <button type="submit" style="width: 100%" class="btn btn-primary">搜索
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <table class="table table-bordered margin-top">
+            <thead>
+            <tr>
+                <th>步骤名</th>
+                <th>步骤说明</th>
+                <th>添加</th>
+            </tr>
+            </thead>
+            <tbody>
+            <#--<#list ></#list>-->
+            <tr v-for="i in list" v-if="i.isdel">
+                <td>{{i.stepname}}</td>
+                <td>{{i.stepdetial}}</td>
+                <td><input type="button" name="ck" @click="i.isdel=false" value="添加"></td>
+            <#--<td>身份认证</td>-->
+            <#--<td>认证身份</td>-->
+            <#--<td><input type="button" name="ck" @click="" value="添加"></td>-->
+            </tr>
+            <#--<tr>-->
+            <#--<td>学历认证</td>-->
+            <#--<td>认证学历</td>-->
+            <#--<td><input type="button" name="ck" value="添加"></td>-->
+            <#--</tr>-->
+            <#--<tr>-->
+            <#--<td>电话邦查询</td>-->
+            <#--<td>查询手机号是否诈骗</td>-->
+            <#--<td><input type="button" name="ck" value="添加"></td>-->
+            <#--</tr>-->
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-5 col-md-5 col-lg-5 col-xs-12">
+        <table class="table table-bordered margin-top">
+            <thead>
+            <tr>
+                <th colspan="2">已选中接口</th>
+            </tr>
+            </thead>
+            <tr v-for="i in list" v-if="!i.isdel">
+                <td>{{i.stepname}}</td>
+                <td><input type="button" name="ck" @click="i.isdel=true" value="删除"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<script type="text/javascript">
+    var vm = new Vue({
+        el: '#vue',
+        data: {
+            list: [
+                {stepname: '身份认证', stepdetial: '认证身份', isdel: true},
+                {stepname: '学历认证', stepdetial: '认证学历', isdel: true},
+                {stepname: '电话邦查询', stepdetial: '查询手机号是否诈骗', isdel: true},
+                {stepname: '拍拍贷黑名单查询接口', stepdetial: '拍拍贷黑名单查询接口', isdel: false},
+                {stepname: '涉诉接口', stepdetial: '拍拍贷黑名单查询接口', isdel: false},
+                {stepname: '银行卡查询接口', stepdetial: '拍拍贷黑名单查询接口', isdel: false}
+            ]
+        }
+    })
+</script>

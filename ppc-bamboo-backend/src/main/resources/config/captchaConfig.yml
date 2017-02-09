@@ -1,0 +1,14 @@
+kaptcha:
+    textproducer:
+        font:
+          names: SansSerif,Serif,Monospaced,Dialog,DialogInput
+          size: 33
+        char: 
+            length: 4
+    image: 
+       width: 110
+       height: 35
+    noise: 
+       impl: com.google.code.kaptcha.impl.NoNoise
+    obscurificator:
+       impl: com.google.code.kaptcha.impl.ShadowGimpy

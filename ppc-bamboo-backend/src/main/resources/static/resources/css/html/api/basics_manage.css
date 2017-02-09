@@ -1,0 +1,156 @@
+#modal7Body{  
+     line-height: 25px;
+}
+
+.modal7leftTitle{
+	 width: 100px;
+    float: left;
+}
+.modal7MethodClass{
+	padding-left:25px;
+}
+.modal7ProductName{
+	font-weight: bold;
+}
+.userInfoBody{
+	border-bottom: 1px solid;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+#modal8Body{  
+     line-height: 25px;
+}
+.modal8leftTitle{
+	 width: 130px;
+	float: left;
+	padding-right: 39px;
+	text-align: right;
+	font-weight: 600;
+}
+.modal8MethodClass{
+	padding-left:25px;
+}
+.modal8ProductName{
+	font-weight: bold;
+}
+.addProductName{
+	font-weight: bold;
+}
+#mpdal8UserInfoBody{
+	line-height: 25px;
+}
+#modal9Body{  
+     line-height: 25px;
+}
+
+.modal9leftTitle{
+	 width: 100px;
+    float: left;
+}
+.modal9MethodClass{
+	padding-left:25px;
+}
+.modal9ProductName{
+	font-weight: bold;
+}
+
+#modalAddBody{  
+     line-height: 25px;
+}
+
+.modalAddleftTitle{
+	 width: 100px;
+    float: left;
+}
+.modalAddMethodClass{
+	padding-left:25px;
+}
+.modalAddProductName{
+	font-weight: bold;
+}
+
+.modal8RightInput{
+	margin-left:130px;
+}
+.modal9RightInput{
+	margin-left:130px;
+}
+.modalAddRightInput{
+	margin-left:130px;
+}
+.focusTr td{
+	background-color:#928d8c !important;
+}
+.floatLeft{
+	float:left;
+}
+
+.floatRight{
+	float:right;
+}
+
+#modal8ProductMothodBody{
+	line-height: 36px;
+}
+
+#addProductMothodBody{
+	line-height: 36px;
+}
+
+#modal9ProductMothodBody{
+	line-height: 36px;
+}
+
+#modalAddProductMothodBody{
+	line-height: 36px;
+}
+
+#modal8Unite{
+	margin-top: 6px;
+	width: 62px;
+	height: 21px;
+	float: left;
+	cursor: pointer;
+}
+#addUnite{
+	margin-top: 6px;
+	width: 62px;
+	height: 21px;
+	float: left;
+	cursor: pointer;
+}
+.blueColor{
+	background-color:#4DFE43;
+	border:#4DFE43;
+}
+.modal8UniteOn{
+	background-image: url('../../../img/on.png');
+	background-position: center center;
+}
+.modal8UniteOff{
+	background-image: url('../../../img/off.png');
+	background-position: center center;
+}
+.addUniteOn{
+	background-image: url('../../../img/on.png');
+	background-position: center center;
+}
+.addUniteOff{
+	background-image: url('../../../img/off.png');
+	background-position: center center;
+}
+#modal8UniteSet input{
+	width: 110px;
+}
+#addUniteSet input{
+	width: 110px;
+}
+.redColor{
+	color:red;
+}
+
+.fontWeight{
+	font-weight: bold;
+}

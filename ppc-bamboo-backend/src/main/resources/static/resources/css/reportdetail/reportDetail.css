@@ -1,0 +1,76 @@
+body,p,div,span,label,img,ul,li{margin:0;padding:0;}
+.fl{float:left;}
+.fr{float:right;}
+.wp52{width:52% !important;}
+.wp40{width:40% !important;}
+.wp45{width:45% !important;}
+.mt10{margin-top:10px}
+.clearfix{clear:both;}
+.c33b6d0{color:#33b6d0}
+.relative{position:relative;}
+body{font:14px/32px "微软雅黑";background:#f5f6f6;color:#414141}
+.ch_main{padding:10px 25px;min-width:1100px;font:14px/32px "微软雅黑";}
+.ch_main .banner{width:100%;}
+.ch_main .banner div.banner_info{width:200px;float:left;padding:0 20px;}
+.ch_main .banner div.banner_info span.name{font-size:20px;font-weight: bold;}
+.ch_main .banner div.banner_info span.id{font-size:12px;}
+.ch_main .banner div.export{width:200px;float:right;text-align: right;font-size:12px;}
+.ch_main .banner div.export img{cursor:pointer;}
+.ch_main .header{font-size:20px;padding:10px 0;}
+.ch_main  .tooltip_gauge{position:absolute;font-size:12px;color:#919191;bottom:55px;left:25%}
+.ch_main .tooltip_gauge_content{display:none;background:#fff;position:absolute;font-size:12px;color:#919191;bottom:-8px;left:120px;border:1px solid #E7E7E7;width:170px;padding:5px;line-height: 20px;}
+.ch_main .tooltip_gauge_content span{color:#65c3d6}
+.ch_main .tooltip_gauge_right_content{bottom:-8px;right:0px;left:auto}
+.ch_main .tooltip_gauge_right_content span{color:rgb(248,170,33)}
+.ch_main  .gauge_right{bottom:55px;right:93px;left:auto}
+.ch_main  .tooltip_gauge>i{margin:0 5px;background:url(../../img/reportdetail/tooltip_3.png) no-repeat;width:12px;height:12px;display:inline-block}
+.ch_main  .tooltip_gauge>i:hover{background:url(../../img/reportdetail/tooltip_4.png) no-repeat;}
+.ch_main  .gauge_right>i:hover{background:url(../../img/reportdetail/tooltip_5.png) no-repeat;}
+.ch_main .header i.mobile{background:url(../../img/reportdetail/mobile_icon.png) center center no-repeat;width:40px;height:32px;display:block;float:left;}
+.ch_main .header i.jd{background:url(../../img/reportdetail/jd_icon.png) center center no-repeat;width:40px;height:32px;display:block;float:left;}
+.ch_main .header i.userinfo{background:url(../../img/reportdetail/info_icon.png) center center no-repeat;width:40px;height:32px;display:block;float:left;}
+.ch_main .dv_spec{color:#919191;}
+.ch_main .dv_spec_info{color:#414141;font-size:12px;}
+.ch_main .dv_spec_info span{padding-right:20px;}
+.ch_main .dv_spec_info i.tooltip2{background:url(../../img/reportdetail/tooltip_2_icon.png) center center no-repeat;width:18px;height:18px;display:inline-block;position:relative;top:3px;left:3px;}
+.ch_main .dv_spec span{padding-right:30px;}
+.ch_main .dv_spec label{color:#33b6d0;font-size:18px;border:1px solid #e7e7e7;padding:5px;border-radius:5px;margin-right:5px;}
+.ch_main .item{border:1px solid #e7e7e7;background:#fff;padding:20px 0;margin-bottom:12px;overflow:hidden;min-height: 200px;}
+.ch_main .item_over{overflow: inherit;}
+.ch_main .item .item_title{font-size:16px;padding:0 20px;}
+.ch_main .item .map_title{color:#585859;text-indent: 20px;}
+.ch_main .item .map_title span{float:left;}
+.ch_main .item .map_title .map_legend{background:url(../../img/reportdetail/map_legend.png) center center no-repeat;display:block;width:100px;height:30px;}
+.ch_main .item .item_title a.expend_btn{display:block;float:right;font-size:12px;color:#585859;cursor:pointer;}
+.ch_main .item .item_title a.expend_btn i{display:inline-block;width:11px;height:7px;background:url(../../img/reportdetail/expand_small_icon.png) no-repeat;margin-left:5px;}
+.ch_main .item .item_title a.expend_btn i.down{background-position:-74px 0;}
+.ch_main .item .item_title span.icon_loc{color:#585859;font-size:12px;padding-left:20px;}
+.ch_main .item .item_title span.icon_loc i{background:url(../../img/reportdetail/location_icon.png) no-repeat;width:16px;height:16px;display:inline-block}
+.ch_main .item .item_table{text-align:left;width:100%;border:0;margin:0;border-collapse:collapse;border-spacing:0;padding:0;}
+.ch_main .item .item_table tr td:first-child,.ch_main .item .item_table tr th:first-child{padding-left:20px;}
+.ch_main .item .item_table tr:hover td{background:#f8f8f8}
+.ch_main .item .item_table th{color:#919191;font-weight: normal;text-align:left;border-bottom:1px solid #f3f3f4;font:14px/32px "微软雅黑";}
+.ch_main .item .item_table td{vertical-align: middle;font:14px/32px "微软雅黑";}
+.ch_main .item .item_table i{width:13px;height:13px;background:url(../../img/reportdetail/state_icon.png) 0 0 no-repeat;display: inline-block;margin-right:5px;}
+.ch_main .item .item_table i.state0{background-position:0 -66px;}
+.ch_main .item .item_table i.state1{background-position:0 0px;}
+.ch_main .item .item_table i.state2{background-position:0 -33px;}
+.ch_main .item .item_table span.unusual{background:url(../../img/reportdetail/tooltip_icon.png)  center center no-repeat;display:block;width:18px;height:18px;cursor:pointer;}
+.ch_main .item .item_table span.progress{display:inline-block;background:#65c3d6;height:18px;width:200px;}
+.ch_main .item .item_table span.progress_value{display:inline-block;min-width:60px}
+.ch_main .item .item_table span.txtcls{background:#58a109;color:#fff;padding:0 3px;margin-left:5px;}
+
+
+
+
+/* ---- Select ----*/ 
+.selectContainer{position:relative;cursor:pointer;width:180px;margin-right:10px;height:40px;font-size:12px;color:#585859; display:inline-block; _display:inline; _zoom:1; z-index:1000; background:url(../../img/reportdetail/select_iframe.png) no-repeat;}
+.selectContainer .selectOption{width:180px;display:block; padding:0 5px; line-height:40px; height:40px; white-space:nowrap; overflow:hidden;border:none; z-index:1000}
+.selectContainer ul{position:absolute;list-style-type:none;width:176px; top:39px; left:0px; border:1px solid #e7e7e7; display:none;}
+.selectContainer ul li{padding:0 5px; line-height:25px; width:166px; background:#FFF;}
+.selectContainer ul li:hover{background:#F5F5F5}  
+.selectContainer ul li i{background:url(../../img/reportdetail/select_icon.png) 0 -35px no-repeat;width:16px;height:16px;float:left;margin:5px 10px 0 0; display:inline-block;}
+.selectContainer ul li.selected i{background-position:0px 0px !important;}
+.selectContainer ul.dis{display:block!important;}  
+.selectContainer ul.undis{display:none!important;}  
+.zIndex{z-index:10000!important;background-position:0 -69px}

@@ -1,0 +1,124 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+# ===================================================================
+
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+eureka:
+    instance:
+        prefer-ip-address: true
+    client:
+        enabled: true
+        healthcheck:
+            enabled: true
+        registerWithEureka: true
+        fetchRegistry: true
+        serviceUrl:
+            defaultZone: http://admin:admin@localhost:8761/eureka/
+
+spring:
+    freemarker: 
+      allow-request-override: false
+      allow-session-override: false
+      cache: true
+      charset: UTF-8
+      check-template-location: true
+      content-type: text/html
+      enabled: true
+      expose-request-attributes: false
+      expose-session-attributes: false
+      expose-spring-macro-helpers: true
+      prefer-file-system-access: true
+    
+      
+      template-loader-path: classpath:/templates/
+#      template-loader-path: /WEB-INF/views/backend/
+      settings:
+        template_update_delay: 0
+        default_encoding: UTF-8 
+        classic_compatible: true
+
+
+    mvc: 
+        view: 
+            prefix: 
+            suffix: .ftl
+    profiles:
+        active: dev
+        include: swagger
+    devtools:
+        restart:
+            enabled: true
+        livereload:
+            enabled: false # we use gulp + BrowserSync for livereload
+    jackson:
+        serialization.indent_output: true
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+#        url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://192.168.66.35:3306/ppc_dev?useUnicode=true&characterEncoding=utf8&useSSL=false
+        name:
+        username: ppdcuser_credit
+        password: Ppda1@.41ConnPDa@d$963%
+#        username: root
+#        password: root
+    jpa:
+        database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+        database: MYSQL
+        show-sql: true
+        properties:
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true
+    messages:
+        cache-seconds: 1
+    redis:
+        database: 0
+        host: 192.168.213.86
+        port: 6379
+        password: redis123
+        pool:
+          max-active: 8
+          max-wait: -1
+          max-idle: 8
+          min-idle: 0
+        timeout: 0
+server:
+    port: 8082
+    error: 
+      whitelabel: 
+        enabled: false    
+    session:
+      timeout: 1800
+
+# ===================================================================
+# PPC specific properties
+# ===================================================================
+
+ppc:
+    security:
+        authentication:
+            jwt:
+                secret: my-secret-token-to-change-in-production
+                # Token is valid 24 hours
+                tokenValidityInSeconds: 86400
+    metrics: # DropWizard Metrics configuration, used by MetricsConfiguration
+        jmx.enabled: true
+        logs: # Reports Dropwizard metrics in the logs
+            enabled: false
+            reportFrequency: 60 # in seconds
+    logging:
+        logstash: # Forward logs to logstash over a socket, used by LoggingConfiguration
+            enabled: false
+            host: localhost
+            port: 5000
+            queueSize: 512
+        spectator-metrics: # Reports Spectator Circuit Breaker metrics in the logs
+            enabled: false
+            # edit spring.metrics.export.delay-millis to set report frequency

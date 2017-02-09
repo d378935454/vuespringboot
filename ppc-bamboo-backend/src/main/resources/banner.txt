@@ -1,0 +1,8 @@
+  ${AnsiColor.GREEN}  ____  ____   ____              _ _ _   
+  ${AnsiColor.GREEN} |  _ \|  _ \ / ___|_ __ ___  __| (_) |_ 
+  ${AnsiColor.GREEN} | |_) | |_) | |   | '__/ _ \/ _` | | __|
+  ${AnsiColor.GREEN} |  __/|  __/| |___| | |  __/ (_| | | |_ 
+  ${AnsiColor.GREEN} |_|   |_|    \____|_|  \___|\__,_|_|\__|
+
+${AnsiColor.BRIGHT_BLUE}:: 拍拍信架构组 :: Running Spring Boot ${spring-boot.version} ::
+:: http://www.ppcredit.com ::${AnsiColor.DEFAULT}
